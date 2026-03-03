@@ -1,0 +1,109 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "alertIndex",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes32",
+                "name": "eventHash",
+                "type": "bytes32"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes32",
+                "name": "entityHash",
+                "type": "bytes32"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "institution",
+                "type": "string"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "timestamp",
+                "type": "uint256"
+            }
+        ],
+        "name": "AlertLogged",
+        "type": "event"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "name": "alerts",
+        "outputs": [
+            {
+                "internalType": "bytes32",
+                "name": "eventHash",
+                "type": "bytes32"
+            },
+            {
+                "internalType": "bytes32",
+                "name": "entityHash",
+                "type": "bytes32"
+            },
+            {
+                "internalType": "string",
+                "name": "institution",
+                "type": "string"
+            },
+            {
+                "internalType": "uint256",
+                "name": "timestamp",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "bytes32",
+                "name": "_eventHash",
+                "type": "bytes32"
+            },
+            {
+                "internalType": "bytes32",
+                "name": "_entityHash",
+                "type": "bytes32"
+            },
+            {
+                "internalType": "string",
+                "name": "_institution",
+                "type": "string"
+            }
+        ],
+        "name": "logAlert",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "totalAlerts",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    }
+]
